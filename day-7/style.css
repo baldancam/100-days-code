@@ -1,0 +1,55 @@
+body {
+  background: rgb(53, 58, 53);
+  color: rgb(228, 195, 154);
+}
+
+.container {
+  display: flex;
+}
+.coluna {
+  flex: 1; /* Define a largura das colunas */
+  padding: 20px; /* Adiciona algum espaço interno para o conteúdo */
+  border: 1px solid #ccc; /* Adiciona uma borda para separar as colunas */
+}
+
+.conteudo p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(32, 27, 5);
+  background: #ccc;
+  border-radius: 10px;
+  font-weight: bold;
+  min-height: 28px;
+}
+p:hover {
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 8%);
+  background: rgba(248, 248, 248, 1);
+}
+
+#inputColuna1,
+#inputColuna2 {
+  height: 28px;
+  min-width: 56px;
+  border-radius: 4px;
+}
+
+button {
+  display: inline-block;
+  outline: 0;
+  cursor: pointer;
+  border: 1px solid #1d1c1d4d;
+  font-weight: 700;
+  background: #fff;
+  padding: 0 8px 1px;
+  font-size: 13px;
+  border-radius: 4px;
+  color: rgb(29, 28, 29);
+  height: 28px;
+  min-width: 56px;
+  transition: all 80ms linear;
+}
+bottom:hover {
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 8%);
+  background: rgba(248, 248, 248, 1);
+}
