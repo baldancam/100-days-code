@@ -45,6 +45,7 @@ Dia 18: Desenvolva um conversor de unidades simples (por exemplo, Celsius para F
 Dia 19: Construa uma página de perfil de usuário em HTML e estilize-a com CSS.
 
 Dia 20: Use JavaScript para adicionar funcionalidades interativas à página de perfil do usuário, como editar informações pessoais.
+
 Dia 21: Crie um slideshow de imagens simples usando HTML, CSS e JavaScript.
 
 Dia 22: Desenvolva uma calculadora de gorjeta em uma página web, permitindo que o usuário insira o valor da conta e escolha a porcentagem da gorjeta.
