@@ -1,13 +1,20 @@
 function validaNumber(a) {
   let resultado;
   if (a.trim() === "") {
+    // Verifica se o input está vazio após remover espaços em branco
     alert("Favor, digite um número válido!");
     resultado = "inválido";
+
+    // Verifica se o valor inserido não é um número
   } else if (isNaN(a)) {
     alert("Favor, digite um número válido!");
     resultado = "inválido";
+
+    // Verifica se o número é par
   } else if (a % 2 === 0) {
     resultado = "par";
+
+    // Caso contrario é impar
   } else {
     resultado = "impar";
   }
