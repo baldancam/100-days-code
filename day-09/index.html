@@ -1,0 +1,77 @@
+<!--Adicione um formulário simples à sua página HTML e use JavaScript para validar os campos do formulário.-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello World</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="coluna">
+        <h2>Formuláro</h2>
+
+        <form id="myForm" action="">
+          <label for="nome"
+            >Nome<input
+              type="text"
+              placeholder="Nome"
+              id="nome"
+              required
+              style="margin-left: 120px"
+            />
+          </label>
+
+          <label for="sobrenome"
+            ><input
+              type="text"
+              placeholder="Sobrenome"
+              id="sobrenome"
+              required
+            /> </label
+          ><br /><br /><br />
+
+          <labe for="dataNascimento"
+            >Data de nascimento<input
+              type="date"
+              id="dataNascimento"
+              required
+              style="margin-left: 30px" /></labe
+          ><br /><br /><br />
+
+          <label for="email"
+            >E-mail
+            <input
+              type="email"
+              id="email"
+              placeholder="exemple@exemple.com"
+              required
+              style="margin-left: 110px"
+            /> </label
+          ><br /><br /><br />
+
+          <label for="sexo"
+            >Sexo
+            <input type="radio" name="sexo" style="margin-left: 120px" />
+            Masculino <input type="radio" name="sexo" /> Feminino
+            <input type="radio" name="sexo" required /> Não informar </label
+          ><br /><br /><br />
+
+          <label for="age"
+            >Idade<input
+              type="number"
+              placeholder="ex: 18"
+              id="age"
+              required
+              style="margin-left: 120px" /></label
+          ><br /><br /><br />
+
+          <input type="submit" style="margin-left: 45%" class="btInput" />
+        </form>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
