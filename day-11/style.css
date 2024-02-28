@@ -1,6 +1,9 @@
 body {
   background: rgb(53, 58, 53);
   color: rgb(228, 195, 154);
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
