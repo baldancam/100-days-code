@@ -1,0 +1,26 @@
+<!--Adicione funcionalidade de adicionar e remover itens à lista de tarefas usando JavaScript.-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello World</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h2>Lista de tarefas</h2>
+
+    <div class="container">
+      <div class="coluna">
+        <h2>Tarefas</h2>
+        <input type="text" id="inputColuna1" placeholder="Adicionar tarefa." />
+        <button onclick="adicionarConteudo('conteudoColuna1')" class="bt-add">
+          Adicionar
+        </button>
+        <div id="conteudoColuna1" class="conteudo"></div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

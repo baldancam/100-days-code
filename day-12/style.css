@@ -1,0 +1,87 @@
+body {
+  background: rgb(53, 58, 53);
+  color: rgb(228, 195, 154);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.coluna {
+  padding: 20px; /* Adiciona algum espaço interno para o conteúdo */
+  border: 1px solid #ccc; /* Adiciona uma borda para separar as colunas */
+}
+
+.conteudo p {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: rgb(32, 27, 5);
+  background: #ccc;
+  border-radius: 10px;
+  font-weight: bold;
+  min-height: 28px;
+}
+p:hover {
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 8%);
+  background: rgba(248, 248, 248, 1);
+}
+
+#inputColuna1,
+#inputColuna2 {
+  height: 28px;
+  min-width: 56px;
+  border-radius: 4px;
+}
+
+.bt-add {
+  display: inline-block;
+  outline: 0;
+  cursor: pointer;
+  border: 1px solid #1d1c1d4d;
+  font-weight: 700;
+  background: #fff;
+  padding: 0 8px 1px;
+  font-size: 13px;
+  border-radius: 4px;
+  color: rgb(29, 28, 29);
+  height: 28px;
+  min-width: 56px;
+  transition: all 80ms linear;
+}
+.bt-add:hover {
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 8%);
+  background: rgba(248, 248, 248, 1);
+}
+
+.bt-edit {
+  border-radius: 30px;
+  background: rgba(197, 241, 74, 0.6);
+  color: #302929;
+  cursor: pointer;
+  border: 0;
+  font-weight: bold;
+  margin-left: 25px;
+}
+.bt-edit:hover {
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 8%);
+  background: rgba(250, 201, 41, 0.836);
+}
+
+.bt-delete {
+  border-radius: 30px;
+  background: rgba(240, 85, 85, 0.6);
+  color: #302929;
+  cursor: pointer;
+  border: 0;
+  font-weight: bold;
+  margin-right: 5px;
+}
+.bt-delete:hover {
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 8%);
+  background: rgba(247, 28, 28, 0.842);
+}
