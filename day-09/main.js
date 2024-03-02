@@ -2,12 +2,12 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
   event.preventDefault(); // Evita que o formulário seja enviado
 
   // Captura os valores dos campos do formulário
-  var nome = document.getElementById("nome").value;
-  var sobrenome = document.getElementById("sobrenome").value;
-  var dataNascimento = document.getElementById("dataNascimento").value;
-  var email = document.getElementById("email").value;
-  var sexo = document.querySelector('input[name="sexo"]:checked');
-  var age = document.getElementById("age").value;
+  let nome = document.getElementById("nome").value;
+  let sobrenome = document.getElementById("sobrenome").value;
+  let dataNascimento = document.getElementById("dataNascimento").value;
+  let email = document.getElementById("email").value;
+  let sexo = document.querySelector('input[name="sexo"]:checked');
+  let age = document.getElementById("age").value;
 
   // Verifique se todos os campos foram preenchidos
   if (

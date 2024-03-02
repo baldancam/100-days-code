@@ -1,0 +1,46 @@
+<!--Use JavaScript para verificar se os campos do formulário de login estão preenchidos corretamente.-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <form id="myForm">
+          <h1 class="botao-aline">Login</h1>
+
+          <p class="itens-login">
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="exemple@exemple.com"
+              required
+            />
+          </p>
+
+          <p class="itens-login">
+            <label for="senha-login">Senha</label>
+            <input id="senha" type="password" placeholder="123" required />
+          </p>
+
+          <p>
+            <input type="checkbox" />
+            <label for="salve-login">lembrar meu e-mail</label>
+          </p>
+
+          <p class="botao-aline">
+            <input class="botao" type="submit" value="Entrar" />
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
