@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(146, 238, 223);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border: 3px solid rgb(75, 70, 70);
+  padding: 30px;
+  border-radius: 30px;
+  background: rgb(103, 230, 114);
+}
+
+h1 {
+  text-align: center;
+  color: rgb(39, 33, 70);
+}
+
+hr {
+  font-weight: bold;
+  height: 3px;
+  background: rgb(55, 141, 211);
+  margin-bottom: 10px;
+}
+p {
+  color: rgb(39, 33, 70);
+  font-weight: bold;
+}
+
+.convert {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: 250px;
+  width: 250px;
+  text-align: center;
+  font-size: 30px;
+}
+
+input {
+  font-size: 30px;
+  height: 30px;
+  width: 170px;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: rgb(184, 250, 189);
+}
+.fahrenheit {
+  pointer-events: none;
+  padding-bottom: 20px;
+}
+
+.pFahrenheit {
+  margin-bottom: 20px;
+}
+
+button {
+  height: 50px;
+  width: 100px;
+  border-radius: 20px;
+  background: rgb(144, 241, 52);
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  color: rgb(39, 33, 70);
+}
