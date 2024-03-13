@@ -57,7 +57,7 @@ main {
   justify-content: center;
   margin: 10vh;
   margin-top: 5vh;
-  border: 1px solid rgb(173, 164, 164);
+  border: 2px solid rgb(162, 161, 165);
   border-radius: 10px;
   padding: 5vh;
   background: rgb(247, 255, 255);
@@ -81,6 +81,7 @@ main {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: italic;
+  color: rgb(70, 69, 70);
 }
 
 hr {
@@ -98,4 +99,112 @@ hr {
   font-weight: 400;
   font-style: italic;
   font-size: 3vh;
+  color: rgb(70, 69, 70);
+}
+
+.timeLine {
+  display: grid;
+  justify-content: start;
+  width: 100%;
+  height: auto;
+  margin: 5vh auto auto 5vh;
+  gap: 2%;
+}
+
+.timeLineUser {
+  width: 90%;
+}
+
+.divsTimeLine {
+  width: 100%;
+  height: auto;
+  display: grid;
+  gap: 2%;
+}
+
+.bioUser,
+.objetivoUser,
+.publicUser {
+  width: 100vh;
+  border: 2px solid rgb(162, 161, 165);
+  border-radius: 10px;
+  background: rgb(247, 255, 255);
+}
+
+.bioUser {
+  display: grid;
+  padding: 2% 3% 0 5%;
+}
+.sobre {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 3vh;
+  color: rgb(95, 94, 95);
+}
+
+.pUser {
+  width: 90%;
+  text-align: start;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 2vh;
+  color: rgb(70, 69, 70);
+  padding-bottom: 3%;
+}
+
+.objetivoUser {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 3vh;
+  color: rgb(95, 94, 95);
+  padding: 2% 3% 0 5%;
+}
+
+.hrProgresso {
+  width: 90%;
+}
+.progressPeso {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin-top: 5%;
+}
+
+.progressUser {
+  width: 90%;
+  background-color: #e90a0a;
+  border-radius: 4px;
+  margin: 20px 2vh;
+}
+
+.progressBarra {
+  width: calc(
+    100% - 40vh
+  ); /* Inicialmente, a barra tem o comprimento total menos uma pequena margem */
+  height: 20px;
+  background-color: #4caf50;
+  border-radius: 4px;
+}
+
+.publicUser {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 3vh;
+  color: rgb(95, 94, 95);
+  padding: 2% 3% 0 5%;
+}
+
+.publicacao {
+  width: 90%;
+  text-align: start;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 2vh;
+  color: rgb(70, 69, 70);
+  padding-bottom: 3%;
 }
