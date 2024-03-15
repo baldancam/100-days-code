@@ -205,6 +205,7 @@ hr {
   font-size: 2vh;
   color: rgb(70, 69, 70);
   padding-bottom: 3%;
+  margin-top: 2%;
 }
 .hrSeparaConteudo {
   width: 100%;
@@ -253,4 +254,8 @@ button:hover:before,
 button:hover:after {
   width: 100%;
   transition: 800ms ease all;
+}
+
+.bt-delete {
+  margin: auto auto 2% 2%;
 }
