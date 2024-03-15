@@ -68,3 +68,21 @@ document.querySelector(".bt-peso").addEventListener("click", function () {
     progressBarra.style.width = `calc(${proporcao} * (100%)`;
   }
 });
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("btnTopo").style.display = "block";
+  } else {
+    document.getElementById("btnTopo").style.display = "none";
+  }
+}
+
+// Scroll suave ao topo da página
+document.getElementById("btnTopo").onclick = function () {
+  scrollToTop();
+};
+
+function scrollToTop() {
+  document.body.scrollTop = 0; // Para navegadores Safari
+  document.documentElement.scrollTop = 0; // Para outros navegadores
+}
