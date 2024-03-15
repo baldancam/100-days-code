@@ -1,0 +1,92 @@
+<!--Use JavaScript para adicionar funcionalidades interativas à página de perfil do usuário, como editar informações pessoais.-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bye Fat</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <nav class="navBar">
+      <div class="logo">
+        <img src="img/logo.png" alt="bye fat" title="bye fat" class="logo" />
+      </div>
+      <div class="homeDiv">
+        <a href="index.html">
+          <img src="img/botao-home.png" alt="Home" title="Home" class="home" />
+        </a>
+      </div>
+    </nav>
+    <main>
+      <section class="infoUsuario">
+        <div>
+          <img
+            src="img/perfil.jpg"
+            alt="foto"
+            title="Foto usuário"
+            class="fotoUsuario"
+          />
+          <div class="dadosUsuario">
+            <p class="nameUser">Juca Pato</p>
+            <hr />
+            <p class="yearUser">22 anos</p>
+            <p class="pesoUser">105 kg</p>
+          </div>
+        </div>
+      </section>
+      <section class="timeLine">
+        <div class="divsTimeLine">
+          <div class="bioUser">
+            <div class="sobre">Sobre</div>
+            <hr class="timeLineUser" />
+            <p class="pUser">
+              Olá, meu nome é Juca Pato, tenho 22 anos e atualmente sofro de
+              obesidade. Meu maior desejo é poder amarrar meu cadarço novamente.
+              Embora pareça simples, é uma atividade que há muito tempo não
+              consigo realizar.
+            </p>
+          </div>
+
+          <div class="objetivoUser">
+            Progresso
+
+            <hr class="hrProgresso" />
+
+            <div class="progressPeso">
+              <p>Peso inicial 140 kg</p>
+              <p>Peso atual 105 kg</p>
+              <p>Meta 70 kg</p>
+            </div>
+
+            <div class="progressUser">
+              <div class="progressBarra"></div>
+            </div>
+          </div>
+          <div class="publicUser">
+            <div class="diario">Diário</div>
+            <hr class="timeLineUser" />
+            <div class="diarioUser">
+              <input
+                type="text"
+                id="inputColuna1"
+                placeholder="Escreva seu pensamento."
+              />
+              <button
+                onclick="adicionarConteudo('conteudoColuna1')"
+                class="bt-add"
+              >
+                add
+              </button>
+              <div id="conteudoColuna1" class="conteudo"></div>
+
+              <p class="publicacao"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
