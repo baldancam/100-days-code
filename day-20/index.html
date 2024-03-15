@@ -31,7 +31,8 @@
             <p class="nameUser">Juca Pato</p>
             <hr />
             <p class="yearUser">22 anos</p>
-            <p class="pesoUser">105 kg</p>
+            <p class="pesoUser">Peso atual 105 kg</p>
+            <button class="bt-peso">Atualizar peso</button>
           </div>
         </div>
       </section>
@@ -54,9 +55,9 @@
             <hr class="hrProgresso" />
 
             <div class="progressPeso">
-              <p>Peso inicial 140 kg</p>
-              <p>Peso atual 105 kg</p>
-              <p>Meta 70 kg</p>
+              <p class="pesoInicial">140 kg Inicial</p>
+              <p class="pesoAtualUser">Peso atual 105 kg</p>
+              <p class="meta">70 kg Meta</p>
             </div>
 
             <div class="progressUser">
@@ -71,12 +72,13 @@
                 type="text"
                 id="inputColuna1"
                 placeholder="Escreva seu pensamento."
+                class="inputDiario"
               />
               <button
                 onclick="adicionarConteudo('conteudoColuna1')"
                 class="bt-add"
               >
-                add
+                +
               </button>
               <div id="conteudoColuna1" class="conteudo"></div>
 

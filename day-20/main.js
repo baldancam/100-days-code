@@ -41,3 +41,30 @@ function adicionarConteudo(idConteudo) {
   // Limpa o input
   document.getElementById("input" + idConteudo.slice(8)).value = "";
 }
+document.querySelector(".bt-peso").addEventListener("click", function () {
+  // Obtém o texto do parágrafo com a classe "pesoUser"
+  let novoTexto = prompt("Informe o novo peso:");
+  if (novoTexto !== null) {
+    // Atualiza o conteúdo do parágrafo com a classe "pesoUser"
+    let pesoUser = document.querySelector(".pesoUser");
+    pesoUser.textContent = `Peso atual ${novoTexto} kg`;
+
+    // Atualiza o conteúdo do parágrafo com a classe "pesoAtualUser"
+    let pesoAtualUser = document.querySelector(".pesoAtualUser");
+    pesoAtualUser.textContent = `Peso atual ${novoTexto} kg`;
+
+    // Converte os valores das classes "pesoInicial" e "meta" para números
+    let pesoInicial = parseFloat(
+      document.querySelector(".pesoInicial").textContent
+    );
+    let meta = parseFloat(document.querySelector(".meta").textContent);
+    let novoPeso = parseFloat(novoTexto);
+
+    // Calcula a proporção
+    let proporcao = (pesoInicial - novoPeso) / (pesoInicial - meta);
+
+    // Atualiza a largura da barra de progresso com a nova proporção
+    let progressBarra = document.querySelector(".progressBarra");
+    progressBarra.style.width = `calc(${proporcao} * (100%)`;
+  }
+});

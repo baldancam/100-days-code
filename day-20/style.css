@@ -181,9 +181,7 @@ hr {
 }
 
 .progressBarra {
-  width: calc(
-    100% - 40vh
-  ); /* Inicialmente, a barra tem o comprimento total menos uma pequena margem */
+  width: calc(100% - 40vh);
   height: 20px;
   background-color: #4caf50;
   border-radius: 4px;
@@ -210,4 +208,49 @@ hr {
 }
 .hrSeparaConteudo {
   width: 100%;
+}
+
+.inputDiario {
+  width: 90%;
+  height: 30px;
+  margin-bottom: 1%;
+}
+
+button {
+  background: rgb(22, 133, 185);
+  color: #fff;
+  border: none;
+  position: relative;
+  height: 30px;
+  font-size: 1em;
+  padding: 0 2em;
+  cursor: pointer;
+  transition: 800ms ease all;
+  outline: none;
+}
+button:hover {
+  background: #fff;
+  color: rgb(22, 133, 185);
+}
+button:before,
+button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: rgb(22, 133, 185);
+  transition: 400ms ease all;
+}
+button:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+button:hover:before,
+button:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
 }
