@@ -1,0 +1,125 @@
+.info-car {
+  display: none;
+}
+
+#info-car1 {
+  display: block;
+}
+
+body {
+  background-color: rgb(44, 43, 43);
+}
+
+.selected {
+  border: 2px solid var(--bg-color);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto 2fr; /* 3 colunas com largura igual */
+  grid-column-gap: 20px; /* Espaçamento entre colunas */
+  grid-row-gap: 20px; /* Espaçamento entre linhas */
+  max-width: 1100px;
+}
+
+.cars {
+  width: 100%; /* Para garantir que as imagens ocupem toda a largura do contêiner */
+  padding: 0;
+}
+
+.cars img {
+  width: 100%; /* Para garantir que as imagens se ajustem ao contêiner */
+  height: auto; /* Para manter a proporção da imagem */
+  border-radius: 30px;
+  cursor: pointer;
+  border: 20px solid rgb(17, 17, 17);
+}
+
+.cars-info {
+  width: 800px;
+}
+
+.content-car {
+  position: fixed;
+  width: 100vh;
+  height: 95vh; /* Definir altura total da viewport */
+  display: flex;
+  flex-direction: column; /* Para exibir os itens em uma coluna */
+  justify-content: start; /* Centralizar verticalmente */
+  align-items: center; /* Centralizar horizontalmente */
+  background: black;
+  margin-left: 35vh;
+  margin-right: auto;
+  border-radius: 30px;
+  color: white;
+}
+
+.content-car img {
+  margin: 10px; /* Adicionar margem entre os itens */
+  margin-top: 30px;
+  border-radius: 30px;
+  max-width: 500px;
+  max-height: 300px;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+h4 {
+  margin: 30px 30px 50px 30px;
+}
+
+.info-car1 {
+  background: rgb(44, 43, 43);
+}
+
+.info-car2 {
+  background: rgb(219, 51, 51);
+}
+
+.info-car3 {
+  background: rgb(221, 205, 205);
+  color: black;
+}
+
+.info-car4 {
+  background: rgb(2, 46, 7);
+}
+
+.info-car5 {
+  background: rgb(247, 222, 170);
+  color: rgb(20, 19, 19);
+}
+
+.info-car6 {
+  background: rgb(34, 18, 17);
+}
+
+.info-car7 {
+  background: rgb(147, 203, 255);
+  color: rgb(20, 19, 19);
+}
+
+.info-car8 {
+  background: rgb(4, 83, 255);
+  color: rgb(255, 253, 253);
+}
+
+.info-car9 {
+  background: rgb(190, 158, 127);
+  color: rgb(20, 19, 19);
+}
+
+.info-car10 {
+  background: rgb(42, 39, 184);
+}
+
+.info-car11 {
+  background: rgb(0, 0, 0);
+}
+
+.info-car12 {
+  background: rgb(193, 245, 225);
+  color: rgb(20, 19, 19);
+}
