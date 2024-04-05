@@ -1,32 +1,20 @@
-// Aguarda o evento de carregamento completo do DOM antes de executar o código
-document.addEventListener("DOMContentLoaded", function () {
-  // Seleciona todas as imagens dentro das divs com a classe "cars"
-  const cars = document.querySelectorAll(".cars img");
-  // Seleciona todas as divs com a classe "info-car"
-  const infoCars = document.querySelectorAll(".info-car");
+let slideIndex = 0;
 
-  cars.forEach((car, index) => {
-    car.addEventListener("click", function () {
-      // Oculta todas as divs com a classe "info-car"
-      infoCars.forEach((infoCar) => {
-        infoCar.style.display = "none";
-      });
+function showSlides() {
+  let slides = document.getElementsByClassName("mySlides");
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+  slides[slideIndex - 1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds (2000 milliseconds)
+}
 
-      // Adiciona a classe "selected" à imagem clicada
-      cars.forEach((car) => {
-        car.classList.remove("selected");
-        car.style.borderColor = ""; // Restaura a cor da borda para o padrão
-      });
-      this.classList.add("selected");
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
 
-      // Exibe a div com a classe "info-car" correspondente ao índice da imagem clicada
-      infoCars[index].style.display = "block";
-
-      // Muda o estilo do body com base na imagem selecionada
-      document.body.style.backgroundColor = this.dataset.color;
-
-      // Define a cor da borda da imagem selecionada
-      this.style.borderColor = this.dataset.color;
-    });
-  });
-});
+showSlides(); // Initial call to start automatic slideshow
