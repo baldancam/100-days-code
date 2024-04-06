@@ -1,3 +1,4 @@
+<!--Crie um slideshow de imagens simples usando HTML, CSS e JavaScript.-->
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
@@ -7,20 +8,61 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="slideshow-container">
+    <div class="container">
+      <div class="controls">
+        <button onclick="plusSlides(-1)">Voltar</button>
+        <button id="pauseButton" onclick="toggleSlides()">Pause</button>
+        <button onclick="plusSlides(1)">Avançar</button>
+      </div>
+
       <div class="mySlides fade">
         <img src="img/buick-electra.jpg" />
       </div>
+
       <div class="mySlides fade">
         <img src="img/c10.jpg" />
       </div>
+
       <div class="mySlides fade">
         <img src="img/cadillac-deville.jpg" />
       </div>
-      <!-- Add more images as needed -->
-      <button class="prev" onclick="plusSlides(-1)">❮</button>
-      <button class="next" onclick="plusSlides(1)">❯</button>
+
+      <div class="mySlides fade">
+        <img src="img/cadillac-eldorado.jpg" />
+      </div>
+
+      <div class="mySlides fade">
+        <img src="img/corvette.jpeg" />
+      </div>
+
+      <div class="mySlides fade">
+        <img src="img/dodge-viper.jpg" />
+      </div>
+
+      <div class="mySlides fade">
+        <img src="img/el-camino.jpg" />
+      </div>
+
+      <div class="mySlides fade">
+        <img src="img/f100.jpg" />
+      </div>
+
+      <div class="mySlides fade">
+        <img src="img/ford-gt.jpg" />
+      </div>
+
+      <div class="mySlides fade">
+        <img src="img/Mustang-1969.jpeg" />
+      </div>
+
+      <div class="mySlides fade">
+        <img src="img/pontac-gto.jpg" />
+      </div>
+
+      <div class="mySlides fade">
+        <img src="img/tri-five.jpg" />
+      </div>
     </div>
-    <script src="script.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
