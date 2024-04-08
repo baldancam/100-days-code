@@ -1,0 +1,68 @@
+<!--Desenvolva uma calculadora de gorjeta em uma página web, permitindo que o usuário insira o valor da conta e escolha a porcentagem da gorjeta.-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Gorgeta</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Calculadora de Gorgeta</h1>
+      <hr />
+      <p></p>
+      <div class="convert">
+        <p>
+          Total gasto:
+          <input
+            type="number"
+            id="gastos"
+            class="gastos"
+            placeholder="Total gasto R$"
+          />
+        </p>
+
+        <div>
+          <p class="pConta">
+            Percentual Gorgeta:
+            <input
+              type="number"
+              id="percentual"
+              class="percentual"
+              placeholder="% gorgeta"
+            />
+          </p>
+
+          <div>
+            <p class="pConta">
+              Valor da Gorgeta:
+              <input
+                type="number"
+                id="valorGorgeta"
+                class="valorGorgeta"
+                placeholder="Valor da gorgeta R$"
+              />
+            </p>
+          </div>
+
+          <div>
+            <p class="pConta">
+              Total a ser pago:
+              <input
+                type="number"
+                id="totalConta"
+                class="totalConta"
+                placeholder="Total R$"
+              />
+            </p>
+          </div>
+
+          <button onclick="converter()">Converter</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
