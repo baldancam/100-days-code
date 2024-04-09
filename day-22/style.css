@@ -32,7 +32,7 @@ hr {
 
 .gastos,
 .percentual,
-.valorGorgeta,
+.valorGorjeta,
 .totalConta {
   width: calc(100% - 20px);
   padding: 10px;
@@ -42,12 +42,12 @@ hr {
 
 .gastos::placeholder,
 .percentual::placeholder,
-.valorGorgeta::placeholder,
+.valorGorjeta::placeholder,
 .totalConta::placeholder {
   color: #aaa;
 }
 
-.valorGorgeta,
+.valorGorjeta,
 .totalConta {
   pointer-events: none;
 }
