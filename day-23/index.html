@@ -1,0 +1,81 @@
+<!--Construa um contador regressivo simples em uma página web, permitindo que o usuário defina um tempo e inicie a contagem regressiva.-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contagem Regressiva</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="countdown">
+      <span class="title">Contagem Regressiva</span>
+
+      <div class="box1">
+        <input type="number" class="uDays" id="uDays" min="0" value="0" />
+        <span class="name">Dias</span>
+      </div>
+
+      <div class="box1">
+        <input
+          type="number"
+          class="uHours"
+          id="uHours"
+          max="24"
+          min="0"
+          value="0"
+        />
+        <span class="name">Horas</span>
+      </div>
+
+      <div class="box1">
+        <input
+          type="number"
+          class="uMinutes"
+          id="uMinutes"
+          max="60"
+          min="0"
+          value="0"
+        />
+        <span class="name">Minutos</span>
+      </div>
+
+      <div class="box1">
+        <input
+          type="number"
+          class="uSeconds"
+          id="uSeconds"
+          max="60"
+          min="0"
+          value="0"
+        />
+        <span class="name">Segundos</span>
+      </div>
+
+      <div class="box">
+        <input class="value" id="dias" value="0" />
+        <span class="name">Dias</span>
+      </div>
+
+      <div class="box">
+        <input class="value" id="horas" value="0" />
+        <span class="name">Horas</span>
+      </div>
+
+      <div class="box">
+        <input class="value" id="minutos" value="0" />
+        <span class="name">Minutos</span>
+      </div>
+
+      <div class="box">
+        <input class="value" id="segundos" value="0" />
+        <span class="name">Segundos</span>
+      </div>
+
+      <button onclick="start()">Start</button>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

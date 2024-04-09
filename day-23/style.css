@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Orbitron";
+  color: rgb(9, 197, 9);
+}
+
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  width: 100%;
+  background: rgb(0, 0, 0);
+}
+
+.countdown {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+.title {
+  grid-column: 4 span;
+  text-align: center;
+  font-size: 25px;
+}
+
+.box,
+.box1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+
+input {
+  max-width: 75px;
+  font-size: 26px;
+  text-align: center;
+  background-color: black;
+  border: none;
+}
+
+.uDays,
+.uHours,
+.uMinutes,
+.uSeconds {
+  margin-left: 20px;
+}
+
+.value {
+  font-size: 45px;
+  font-weight: 350;
+  pointer-events: none;
+  margin-left: 10px;
+}
+
+.name {
+  font-size: 16px;
+}
+
+.box1 {
+  border: 2px solid rgb(41, 38, 38);
+  border-radius: 5px;
+}
+
+button {
+  grid-column: 4 span;
+  font-size: 25px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #000000;
+  color: rgb(9, 197, 9);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #202020;
+}
