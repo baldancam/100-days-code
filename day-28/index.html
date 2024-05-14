@@ -1,29 +1,44 @@
-<!--Desenvolva um simulador de lançamento de dados, onde o usuário pode escolher o número de dados e o tipo de dado (d4, d6, d8, etc.) a ser lançado-->
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dados</title>
-   
-       <link rel="stylesheet" href="style.css" />
-       
-  </head>
-  <body>
-  
-      <h1>Dados</h1>
-      <section class="content">
-        <h3><span id="result"></span></h3>
-        <div class="board"></div>
-        
-      </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dados</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Lançador de Dados</h1>
+    <div class="content">
+      <div class="faceselect">
+        <label for="faces" class="select-label">Escolha o número de lados do dado:</label>
+        <div class="select-wrapper">
+          <select name="faces" id="faces" class="select-box">        
+            <option value="">Selecione</option>      
+            <option value="2">2 Lados</option>
+            <option value="3">3 Lados</option>
+            <option value="4">4 Lados</option>
+            <option value="5">5 Lados</option>
+            <option value="6">6 Lados</option>
+            <option value="7">7 Lados</option>
+            <option value="8">8 Lados</option>
+            <option value="9">9 Lados</option>
+            <option value="10">10 Lados</option>
+            <option value="11">11 Lados</option>
+            <option value="12">12 Lados</option>
+          </select>
+        </div>
 
+        <div class="lancar">
+          <button class="btlancar" onclick="lancarDados()">Lançar dados</button>
+        </div>
         
- 
-    <script src="main.js"></script>
-  </body>
+        <div class="result">
+          <span id="numerosorteado">?</span>            
+        </div>
+      </div>        
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
 </html>
-
-
-
-
