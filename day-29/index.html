@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lista de Compras</title>
+</head>
+<body>
+    <section>
+        <nav class="navbar">
+            <input type="text" id="itemInput" placeholder="Digite um item">
+            <button class="adicionar" onclick="adicionarItem()">Adicionar item</button>
+        </nav>
+        <table id="listaDeCompras">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Comprado</th>
+                    <th>Remover</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- As linhas da tabela serão inseridas aqui -->
+            </tbody>
+        </table>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>

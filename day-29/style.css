@@ -1,0 +1,94 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;   
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    min-height: 100vh;
+}
+
+section {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 600px;
+    padding: 1rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+#itemInput {
+    flex: 1;
+    padding: 0.5rem;
+    margin-right: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button.adicionar, button.remover {
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+button.adicionar {
+    background-color: #6200ea;
+}
+
+button.adicionar:hover {
+    background-color: #3700b3;
+}
+
+button.remover {
+    background-color: #d32f2f;
+}
+
+button.remover:hover {
+    background-color: #b71c1c;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #6200ea;
+    color: #fff;
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    font-size: 1.5rem;
+}
+
+th {
+    font-weight: bold;
+}
+
+input[type="checkbox"] {
+    width: 30px;
+    height: 30px;
+    accent-color: green;
+}
